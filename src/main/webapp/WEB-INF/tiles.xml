@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="homePage" template="/WEB-INF/home/home.jsp">
+		<put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/layouts/menu.jsp" />
+		<put-attribute name="body"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+	</definition>
+	<!-- Trang chủ -->
+	<definition name="page" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/content.jsp" />
+	</definition>
+	<!-- Nhân viên -->
+	<definition name="nhanvien" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/nhanvien/nhanvien.jsp" />
+	</definition>
+	<definition name="themnhanvien" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/nhanvien/themnhanvien.jsp" />
+	</definition>
+	<!-- Bảo hiểm -->
+	<definition name="baohiem" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/baohiem.jsp" />
+	</definition>
+	<definition name="kyluat" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/kiluat.jsp" />
+	</definition>
+	<definition name="khenthuong" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/khenthuong.jsp" />
+	</definition>
+	<!-- Quản lý hợp đồng -->
+	<definition name="quanlyhopdong" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/hopdong/quanlyhopdong.jsp" />
+	</definition>
+	<definition name="themhopdong" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/hopdong/themhopdong.jsp" />
+	</definition>
+	<definition name="chitiethopdong" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/hopdong/chitiethopdong.jsp" />
+	</definition>
+	<definition name="suahopdong" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/hopdong/suahopdong.jsp" />
+	</definition>
+	<!-- Quản lý hợp đồng end -->
+	<definition name="khieunai" extends="homePage">
+		<put-attribute name="body" value="/WEB-INF/page/khieunai.jsp" />
+	</definition>
+</tiles-definitions>
